@@ -1,0 +1,10 @@
+<h1>Dragons</h1>
+
+<ul>
+<% @dragons.each do |dragon| %>
+<li><%= link_to dragon.name.capitalize, dragon%></li>
+<% end %>
+</ul>
+<button><%= link_to 'Visit the Master/s Page', users_path %></button>
+<br>
+<button><%= link_to 'Create Dragon', new_dragon_path%></button>

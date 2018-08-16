@@ -1,0 +1,18 @@
+<h1>Dragons</h1>
+<br>
+<%= form_with model: @dragon do |form| %>
+  <%= form.label :name %>:
+  <%= form.text_field :name %><br />
+
+  <%= form.label :breed %>:
+  <%= form.text_field :breed %><br />
+
+  <%= form.label :attack_power %>:
+  <%= form.number_field :attack_power%><br />
+
+  <%= form.label :user %>:
+  <%= form.collection_select :user_id, @users, :id, :full_name %><br />
+
+
+  <%= form.submit %>
+<% end %>

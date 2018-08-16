@@ -1,0 +1,18 @@
+<h1>Create User Profile</h1>
+<br>
+<%= form_with model: @user do |form| %>
+  <%= form.label :first_name %>:
+  <%= form.text_field :first_name %><br />
+
+  <%= form.label :last_name %>:
+  <%= form.text_field :last_name %><br />
+
+  <%= form.label :attack_power %>:
+  <%= form.number_field :attack_power%><br />
+
+  <%= form.label :defense_power %>:
+  <%= form.number_field :defense_power%><br />
+
+
+  <%= form.submit %>
+<% end %>
